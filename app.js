@@ -15,6 +15,8 @@ function getPlayerChoice() {
     case 3:
       return "scissors";
       break;
+    default:
+      return "Invalid input";
   }
 }
 // Computer's Choice
@@ -50,8 +52,34 @@ function playRound(playerChoice, computerChoice) {
   }
 }
 
-// Set picks
-const playerChoice = getPlayerChoice();
-const computerChoice = getComputerChoice();
+// Full 5 round game
+function playGame() {
+  let playerScore = 0;
+  let computerScore = 0;
+  let rounds = 0;
 
-console.log(playRound(playerChoice, computerChoice));
+  while (rounds < 5) {
+    let playerChoice = getPlayerChoice();
+    let computerChoice = getComputerChoice();
+    let result = playRound(playerChoice, computerChoice);
+
+    if (result === "You win!") {
+      playerScore++;
+    } else if (result === "Computer wins!") {
+      computerScore++;
+    }
+    console.log("Player Choice:", playerChoice);
+    console.log("Computer Choice:", computerChoice);
+    console.log("Current score:\nPlayer: " + playerScore + " Computer: " + computerScore)
+    console.log("")
+    rounds += 1;
+  }
+
+  if (playerScore > computerScore) {
+    console.log("Congratulations! You've won!");
+  } else {
+    console.log("Sorry, you've lost!");
+  }
+}
+// Let the games begin!
+playGame();
