@@ -1,5 +1,5 @@
 // Get player's choice
-function getPlayerChoice() {
+/*function getPlayerChoice() {
   let userInput = prompt("Select 1 for ROCK-- 2 for PAPER-- 3 for SCISSORS");
   // userInput takes in a string bc of prompt
   // so we user parseInt() to convert it into an integer for the switch case
@@ -18,7 +18,8 @@ function getPlayerChoice() {
     default:
       return "Invalid input";
   }
-}
+} */
+
 // Computer's Choice
 function getComputerChoice() {
   let randomDecimal = Math.random();

@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --primary-light: #ddd;
+  --primary-dark: #222831;
+  --secondary-dark: #393e46;
+  --secondary-dark-hover: #4a4f57;
+  --secondary-dark-active: #5b5f68;
+  --header: #111720;
+  --primary-yellow: #fac650;
+}
+
+.header {
+  background-color: var(--header);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.title {
+  font-size: 32px;
+  color: var(--primary-yellow);
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.instructions {
+  font-size: 32px;
+}
+
+.rules {
+  font-size: 22px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.player-card,
+.computer-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.player-choice,
+.computer-choice {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.player-score,
+.computer-score {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.score-container::before,
+.score-container::after {
+  content: "";
+  flex: 1;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-light);
+  font-size: 20px;
+}
