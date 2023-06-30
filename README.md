@@ -3,7 +3,7 @@
 Recipe page created with JavaScript, HTML & CSS
 
 ##
-[Live Demo 👈](<Link here TBA>) TBA
+[Live Demo 👈](https://darylagoncillo.github.io/rock-paper-scissors/)
 
 ## Authors
 
