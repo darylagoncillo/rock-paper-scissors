@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-Recipe page created with JavaScript, HTML & CSS
+Game created with JavaScript, HTML & CSS
 
 ##
 [Live Demo 👈](https://darylagoncillo.github.io/rock-paper-scissors/)
